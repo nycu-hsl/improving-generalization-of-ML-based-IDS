@@ -103,7 +103,7 @@ if __name__ == "__main__":
 	    # =============================================================================
 	    # label_traffic flow
 	    # ============================================================================= 
-	    reader = csv.reader(open('datasets/raw_datasets/CREME_02_2023/label_traffic/label_traffic_'+ attack +'.csv', newline=''))
+	    reader = csv.reader(open('../datasets/raw_datasets/CREME_02_2023/label_traffic/label_traffic_'+ attack +'.csv', newline=''))
 	    title = next(reader)
 	    lines = list(reader)
 	    normal_flow = list()
@@ -126,7 +126,7 @@ if __name__ == "__main__":
 	    # =============================================================================
 
 	    print(attack)
-	    pkts = rdpcap('datasets/raw_datasets/CREME_02_2023/traffic_' + attack + '.pcap')
+	    pkts = rdpcap('../datasets/raw_datasets/CREME_02_2023/traffic_' + attack + '.pcap')
 
 	    normal_pcap = []
 	    abnormal_pcap = []
@@ -169,5 +169,5 @@ if __name__ == "__main__":
 		        abnormal_pcap.append(pkt)
 
 		
-	    wrpcap("datasets/split_benign_attack/cremev2/normal_" + attack + ".pcap", normal_pcap)
-	    wrpcap("datasets/split_benign_attack/cremev2/abnormal_" + attack + ".pcap", abnormal_pcap)
+	    wrpcap("../datasets/split_benign_attack/cremev2/normal_" + attack + ".pcap", normal_pcap)
+	    wrpcap("../datasets/split_benign_attack/cremev2/abnormal_" + attack + ".pcap", abnormal_pcap)
