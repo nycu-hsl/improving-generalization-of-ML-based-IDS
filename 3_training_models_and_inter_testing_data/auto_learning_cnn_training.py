@@ -158,12 +158,12 @@ def f1_m(y_true, y_pred):
 
 
 def train_model_for_configuration(num_packets, bytes_per_packet):
-    benign = read_and_sample_feather_files('extracted_data/cremev2/benign.feather')
-    disk_wipe = read_and_sample_feather_files('extracted_data/cremev2/disk_wipe.feather')
-    end_point_dos = read_and_sample_feather_files('extracted_data/cremev2/end_point_dos.feather')
-    mirai = read_and_sample_feather_files('extracted_data/cremev2/mirai.feather')
-    ransomware = read_and_sample_feather_files('extracted_data/cremev2/ransomware.feather')
-    resource_hijacking = read_and_sample_feather_files('extracted_data/cremev2/resource_hijacking.feather')
+    benign = read_and_sample_feather_files('../datasets/extracted_data/auto_learning/cremev2/benign.feather')
+    disk_wipe = read_and_sample_feather_files('../datasets/extracted_data/auto_learning/cremev2/disk_wipe.feather')
+    end_point_dos = read_and_sample_feather_files('../datasets/extracted_data/auto_learning/cremev2/end_point_dos.feather')
+    mirai = read_and_sample_feather_files('../datasets/extracted_data/auto_learning/cremev2/mirai.feather')
+    ransomware = read_and_sample_feather_files('../datasets/extracted_data/auto_learning/cremev2/ransomware.feather')
+    resource_hijacking = read_and_sample_feather_files('../datasets/extracted_data/auto_learning/cremev2/resource_hijacking.feather')
 
     benign['label'] = 0
     disk_wipe['label'] = 1
