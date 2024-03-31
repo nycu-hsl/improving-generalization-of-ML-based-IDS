@@ -206,34 +206,34 @@ def main():
     # Dataset configurations
     datasets_info = {
         "CREMEv1": {
-            'main_paths': ['/media/didik/Backup/dataset_generalization/fix_data_2024/extracted_data/nfstream/cremev1.feather'],
+            'main_paths': ['../datasets/extracted_data/nfstream/cremev1.feather'],
             'benign_path': None,
             'main_sample_size': 1000,
             'benign_sample_size': 0
         },
         "CCU-Mirai HTTP": {
-            'main_paths': ['/media/didik/Backup/dataset_generalization/fix_data_2024/extracted_data/nfstream/mirai_ccu.feather'],
+            'main_paths': ['../datasets/extracted_data/nfstream/mirai_ccu.feather'],
             'benign_path': None,
             'main_sample_size': 1000,
             'benign_sample_size': 0
         },
         "CIC-IDS-2017": {
-            'main_paths': glob.glob('/home/didik/Downloads/code/traffic/preprocess/dataset_cicids_NFStream/*.feather'),
-            'benign_path': '/media/didik/01D70E28EC8AF790/Datasets/CICIDS 2017 Raw Data/benign_nfstream/benign.feather',
+            'main_paths': glob.glob('../datasets/extracted_data/nfstream/cicids2017/*.feather'),
+            'benign_path': '../datasets/extracted_data/nfstream/cicids2017/benign/benign_cicids2017.feather',
             'main_sample_size': 1000,
             'benign_sample_size': 5000
         },
         "CIC-IDS-2018": {
-            'main_paths': glob.glob('/home/didik/Downloads/code/traffic/preprocess/cicids_2018/nfstream/*.feather'),
-            'benign_path': '/media/didik/01D70E28EC8AF790/Datasets/cse-cic-ids2018-benign/Original/benign_2018_july.feather',
+            'main_paths': glob.glob('../datasets/extracted_data/nfstream/cicids2018/*.feather'),
+            'benign_path': '../datasets/extracted_data/nfstream/cicids2018/benign/benign_cicids2018.feather',
             'main_sample_size': 1000,
             'benign_sample_size': 5000
         },
         "CIC-DDOS-2019": {
-            'main_paths': glob.glob('/media/didik/01D70E28EC8AF790/Datasets/CICDDOS_2019/dataset/nfstream/*.feather'),
-            'benign_path': '/media/didik/01D70E28EC8AF790/Datasets/cse-cic-ids2018-benign/Original/benign_2018_july.feather',
-            'main_sample_size': 500,
-            'benign_sample_size': 5000
+            'main_paths': ['..datasets/extracted_data/nfstream/cicddos2019.feather'],
+            'benign_path': None,
+            'main_sample_size': 0,
+            'benign_sample_size': 0
         },
     }
     
