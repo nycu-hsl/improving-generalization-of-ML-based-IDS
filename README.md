@@ -19,12 +19,4 @@ During the past 10 years, researchers have extensively explored the use of machi
 ## Citation
 
 If you utilize our code or findings in your research, please cite our paper as follows:
----
-@ARTICLE{generalization,
-author={Sudyana, Didik and Verkerken, Miel and Lin, Ying-Dar and Hwang, Ren-Hung and Lai, Yuan-Cheng and D’hooge, Laurens and Wauters, Tim and Volckaert, Bruno and De Turck, Filip},
-journal={IEEE Transactions on Machine Learning in Communications and Networking},
-title={Improving Generalization of ML-based IDS with Lifecycle-based Dataset, Auto-Learning Features, and Deep Learning},
-year={2024},
-volume={in revision}
-}
----
+
