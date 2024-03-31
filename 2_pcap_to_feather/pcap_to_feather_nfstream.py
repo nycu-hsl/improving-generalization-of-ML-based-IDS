@@ -104,7 +104,7 @@ if __name__ == '__main__':
 
     base_path = 'datasets/'
     for dataset, attacks in datasets.items():
-        save_place = f'{base_path}extracted_data/{dataset}/'
+        save_place = f'{base_path}extracted_data/nfstream/{dataset}/'
         for attack in attacks:
             if dataset in ['cremev2', 'cremev1']:
                 label = '0' if attack == 'benign' else '1'
