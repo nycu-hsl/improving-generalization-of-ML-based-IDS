@@ -14,7 +14,7 @@ During the past 10 years, researchers have extensively explored the use of machi
 
 - `3_training_models_and_inter_testing_data`: Contains the code for training models with auto learning and statistical features. It also includes methods for conducting generalization tests using the inter testing dataset approach.
 
-- `CNN_model`: Contains the saved CNN model for all scenarios involving auto learning features.
+- For the datasets and all CNN models, you can download here https://zenodo.org/records/10900619
 
 ## Citation
 
